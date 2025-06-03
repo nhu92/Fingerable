@@ -48,7 +48,7 @@ extract_shortest_interval_between_genes <- function(gene1, gene2 = NULL, input_d
       }
       
       if (!is.null(gene2) && (gene_val == gene2 || grepl(gene2, product_val))) {
-        gene2_coords <- c(gene2_coords, coords_list)
+        gene2_coords <- c(gene2_coords, list(coords_list))
       }
     }
     
